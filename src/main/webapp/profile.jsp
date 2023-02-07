@@ -23,6 +23,7 @@
 
 </body>
 <%@include file="/partials/footer.jsp"%>
+<% Wel
 <%--<jsp:include page="partials/footer.jsp">--%>
 <%--</jsp:include>--%>
 
