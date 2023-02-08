@@ -1,6 +1,10 @@
+package com.codeup.adlister;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import com.mysql.cj.jdbc.Driver;
+import dao.Config;
+
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -27,23 +31,23 @@ public class JDBCLecture {
             }
 
 
-//            List<Album> albums = new ArrayList<>();
-//
-//            while (rs.next()) {
-//                albums.add(
-//                        new Album(
-//                                rs.getLong("id"),
-//                                rs.getString("artist"),
-//                                rs.getString("name"),
-//                                rs.getInt("release_date"),
-//                                rs.getDouble("sales"),
-//                                rs.getString("genre")
-//                        ));
-//            }
-//
-//            for(int i = 0; i < albums.size(); i++){
-//                System.out.println(albums.toString());
-//            }
+            List<Album> albums = new ArrayList<>();
+
+            while (rs.next()) {
+                albums.add(
+                        new Album(
+                                rs.getLong("id"),
+                                rs.getString("artist"),
+                                rs.getString("name"),
+                                rs.getInt("release_date"),
+                                rs.getDouble("sales"),
+                                rs.getString("genre")
+                        ));
+            }
+
+            for(int i = 0; i < albums.size(); i++){
+                System.out.println(albums.toString());
+            }
 
         }
         catch (SQLException e) {

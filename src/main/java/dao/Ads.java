@@ -1,0 +1,12 @@
+package dao;
+
+import com.codeup.adlister.Ad;
+
+import java.util.List;
+
+public interface Ads {
+    // get a list of all the ads
+    List<Ad> all();
+    // insert a new ad and return the new ad's id
+    long insert(Ad ad);
+}

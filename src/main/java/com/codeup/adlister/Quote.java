@@ -1,4 +1,5 @@
-import javax.swing.text.StringContent;
+package com.codeup.adlister;
+
 import java.io.Serializable;
 
 public class Quote implements Serializable {

@@ -11,5 +11,17 @@
     <c:if test="false">
         <h1>single letter variable names are good</h1>
     </c:if>
+<div class="container">
+    <h1>Here is where the Ads go!</h1>
+
+    <c:forEach var="ad" items="${ads}">
+
+        <div>
+    <h2><c:out value = "${ad.title}" /></h2>
+    <p><c:out value = "${ad.description}" /></p>
+        </div>
+    </c:forEach>
+
+</div>
 </body>
 </html>

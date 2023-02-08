@@ -1,4 +1,4 @@
-package models;
+package com.codeup.adlister.models;
 
 import java.io.Serializable;
 
