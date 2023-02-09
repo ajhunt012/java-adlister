@@ -1,5 +1,6 @@
-package com.codeup.adlister;
+package controllers;
 
+import com.codeup.adlister.models.Ad;
 import dao.DaoFactory;
 
 import javax.servlet.ServletException;
